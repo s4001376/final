@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+    <title>s4001376 Icons Display</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/buzz/1.2.1/buzz.min.js"></script>
+        <style>
+            .row{
+                width:720px;
+                margin: 40px auto 40px auto ;
+            }
+            .image-container {
+                display: table-cell;
+                vertical-align: middle;
+                padding:50px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <body style="background-color:rgb(104, 126, 105)"/>
+        <div class="row">
+            <div class="image-container"><img id="boomerang" src="img/1.png" height="400" width="400" onmouseover="this.src='img/1g.png';" onmouseout="this.src='img/1.png';"/></div>
+            <div class="image-container"><img id="boba" src="img/5.png" height="350" width="350" onmouseover="this.src='img/5g.png';" onmouseout="this.src='img/5.png';"/></div>
+            <div class="image-container"><img id="cityglass" src="img/3.png" height="400" width="400" onmouseover="this.src='img/3g.png';" onmouseout="this.src='img/3.png';"/></div>
+        </div>
+
+        <div class="row">
+            <div class="image-container"><img id="taxi" src="img/4.png" height="350" width="350" onmouseover="this.src='img/4g.png';" onmouseout="this.src='img/4.png';"/></div>
+            <div class="image-container"><img id="uluru" src="img/2.png" height="450" width="450" onmouseover="this.src='img/2g.png';" onmouseout="this.src='img/2.png';"/></div>
+            <div class="image-container"><img id="location" src="img/7.png" height="350" width="350" onmouseover="this.src='img/7g.png';" onmouseout="this.src='img/7.png';"/></div>
+            </div>
+
+        <div class="row">
+            <div class="image-container"><img id="gamer" src="img/6.png" height="400" width="400"onmouseover="this.src='img/6g.png';" onmouseout="this.src='img/6.png';"/></div>
+            <div class="image-container"><img id="tv" src="img/9.png" height="350" width="350" onmouseover="this.src='img/9g.png';" onmouseout="this.src='img/9.png';"/></div>
+            <div class="image-container"><img id="world" src="img/8.png" height="400" width="400" onmouseover="this.src='img/8g.png';" onmouseout="this.src='img/8.png';"/></div>
+        </div>
+        <script>
+            var sound1 = new buzz.sound("sound/woosh.mp3");
+            var sound2 = new buzz.sound("sound/shlurp.mp3");
+            var sound3 = new buzz.sound("sound/city.mp3");
+            var sound4 = new buzz.sound("sound/taxi.mp3");
+            var sound5 = new buzz.sound("sound/uluru.mp3");
+            var sound6 = new buzz.sound("sound/location.mp3");
+            var sound7 = new buzz.sound("sound/powerup.mp3");
+            var sound8 = new buzz.sound ("sound/tvstatic.mp3");
+            var sound9 = new buzz.sound("sound/plane.mp3");
+        
+
+   
+        window.onload = function(){
+            document.getElementById('boomerang').addEventListener('mouseover', function () {sound1.play();});
+            document.getElementById('boba').addEventListener('mouseover', function () {sound2.play();});
+            document.getElementById('cityglass').addEventListener('mouseover', function () {sound3.play();});
+            document.getElementById('taxi').addEventListener('mouseover', function () {sound4.play();});
+            document.getElementById('uluru').addEventListener('mouseover', function () {sound5.play();});
+            document.getElementById('location').addEventListener('mouseover', function () {sound6.play();});
+            document.getElementById('gamer').addEventListener('mouseover', function () {sound7.play();});
+            document.getElementById('tv').addEventListener('mouseover', function () {sound8.play();});
+            document.getElementById('world').addEventListener('mouseover', function () {sound9.play();});
+
+        };
+
+    </script>
+    </body>
+    
+</html>
